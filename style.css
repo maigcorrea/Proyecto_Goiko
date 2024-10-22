@@ -70,3 +70,78 @@ nav{
 
 
 /* BANNER */
+
+#banner-hamb{
+    width: 100%;
+    height: 80vh;
+}
+
+.video{
+    height: 96vh;
+    width: 96vh;
+    margin: 0 auto 4vh;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-55%);
+}
+
+.video video{
+    max-width: 99vh;
+    margin-top: 9%;
+}
+
+.banner spam{
+    color:white;
+}
+
+.letter1 spam:nth-child(odd), .letter3 spam:nth-child(odd){
+    color: black;
+    -webkit-text-stroke: 1px white;
+}
+
+.letter2 spam:nth-child(even), .letter4
+ spam:nth-child(even){
+    color: black;
+    -webkit-text-stroke: 1px white;
+}
+
+.letter-container{
+    position: absolute;
+    width: 100%;
+    font-size: 140px;
+    text-wrap:nowrap;
+    z-index: -999;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.letter1, .letter3{
+    animation-name:rotarDcha;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-delay: 0s;
+    white-space:nowrap;
+    transition: transform .64s cubic-bezier(0.61, 0.01, 0.46, 0.99);
+    transition-delay: .16s
+}
+
+.letter2, .letter4{
+    animation-name:rotarDcha;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    white-space:nowrap;
+}
+
+@keyframes rotarDcha {
+    from{transform:translateX(0%);}
+    to{transform: translateX(-130%);}
+}
+
+
+
+
