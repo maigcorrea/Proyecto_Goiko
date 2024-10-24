@@ -227,6 +227,7 @@ nav{
 
 
 /* SECCIÓN 3- CARTA */
+/* Animación de la CARTA */
 .carta-container{
     width: 100%;
     font-size: 140px;
@@ -255,4 +256,30 @@ nav{
     animation-timing-function: linear;
     animation-delay: 0s;
     white-space:nowrap;
+}
+
+
+/* Entrantes, burguers, etc */
+/* #carta{
+    
+} */
+.menu-container{
+    padding:60px 0;
+    display: flex;
+    gap: 30px;
+    width:300%; /*  con display flex solo no funciona, no se porqué, SÓLO FUNCIONA ASÍ */
+}
+
+.elemento-menu{
+    width: 30%;
+}
+
+.texto{
+    color:white;
+}
+
+.elemento-menu img{
+    max-width: 100%;
+    border:1px solid white;
+    border-radius: 15px;
 }
