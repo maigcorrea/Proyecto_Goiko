@@ -267,19 +267,30 @@ nav{
     padding:60px 0;
     display: flex;
     gap: 30px;
+    /* justify-content: space-around; */
+    margin-left:50px;
     width:300%; /*  con display flex solo no funciona, no se porqué, SÓLO FUNCIONA ASÍ */
 }
 
 .elemento-menu{
-    width: 30%;
+    width: 10%;
 }
 
 .texto{
     color:white;
+    line-height: 35px;
+    padding-top:20px;
+    font-size:25px;
 }
 
+.texto p{
+    font-family: "Nunito Sans";
+    color:#8d8d8d;
+}
 .elemento-menu img{
     max-width: 100%;
     border:1px solid white;
     border-radius: 15px;
 }
+
+
