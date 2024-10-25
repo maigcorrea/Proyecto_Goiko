@@ -294,7 +294,25 @@ nav{
 }
 
 /* SECCION 4 */
+#contador{
+    text-align: center;
+}
 
 #contador img{
-    width: 70px;
+    width: 100px;
 }
+
+#contador h2{
+    color: white;
+    font-size: 48px;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: auto;
+    padding:3% 0;
+}
+
+
