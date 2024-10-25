@@ -576,6 +576,46 @@ video{
 /* FOOTER */
 
 footer{
-    height: 70vh;
+    height: 100vh;
     background-color: white;
+    padding-top: 7%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo-footer{
+    width: 8%;
+}
+
+.footer-container svg{
+    max-width: 100%;
+    
+}
+
+.opc1{
+    font-size: 48px;
+    width:30%;
+    line-height: 60px;
+}
+
+.opc2{
+    font-family: "Knockout";
+    font-size: 20px;
+    width: 25%;
+    line-height: 35px;
+}
+
+.opc1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.opc2 a{
+    text-decoration: none;
+    color: black;
 }
