@@ -260,9 +260,10 @@ nav{
 
 
 /* Entrantes, burguers, etc */
-/* #carta{
-    
-} */
+#carta{
+   overflow: hidden; 
+}
+
 .menu-container{
     padding:60px 0;
     display: flex;
@@ -287,6 +288,7 @@ nav{
     font-family: "Nunito Sans";
     color:#8d8d8d;
 }
+
 .elemento-menu img{
     max-width: 100%;
     border:1px solid white;
@@ -465,6 +467,7 @@ video{
 
 /* SECCIÓN 7 - GOIKO NEWS */
 
+/* PALABRAS EN MOVIMIENTO */
 .banner-news p{
     color: black;
     -webkit-text-stroke: 1.5px white;
@@ -489,3 +492,80 @@ video{
     from{transform:translateX(0%);}
     to{transform: translateX(-130%);}
 }
+
+/* NEWS */
+
+#goikoNews{
+    padding-bottom: 5%;
+}
+.news-container{
+    padding:60px 0;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin:0 30px;
+    height: 90vh;
+     /*  con display flex solo no funciona, no se porqué, SÓLO FUNCIONA ASÍ */
+}
+
+.new{
+    width: 32%;
+    height: 76%;
+}
+
+.news-container .new:first-of-type div:first-of-type {
+    background-image: url(./img/imagenes/JL171223GOIKO-7-1024x683.jpg);
+    background-size: cover;
+    height: 80%;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+
+.news-container .new:nth-of-type(2) div:first-of-type {
+    background-image: url(./img/imagenes/BurgerEspecial_VAL_LaFallera_H-copia-1024x512.png);
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.news-container .new:nth-of-type(3) div:first-of-type{
+    background-image: url(./img/imagenes/RESERVAS_1800x1200.png);
+    background-size: cover;
+    height: 80%;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.text-news{
+    padding-top:5%;
+}
+
+.text-news span{
+    color: white;
+    font-family: "Knockout";
+    font-size: 20px;
+}
+
+.text-news p{
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 42px;
+    padding-top: 20px;
+}
+
+#goikoNews>div:nth-child(3){
+    text-align: center;
+}
+
+#goikoNews>div:nth-child(3)>a{
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    border:2px solid white;
+    border-radius: 40px;
+    padding: 20px 40px;
+}
+
