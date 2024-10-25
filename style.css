@@ -414,8 +414,9 @@ video{
 /* GOIKOCINA */
 #goikocina{
     padding-top: 8%;
-    padding-bottom:5%;
+    padding-bottom:8%;
 }
+
 .goikocina-container{
     display: flex;
     align-items: center;
@@ -439,7 +440,9 @@ video{
 }
 
 .goikocinaTexto p{
+    font-size: 18px;
     font-family: "Nunito Sans";
+    line-height: 20px;
 }
 
 .goikocinaTexto a{
@@ -454,4 +457,8 @@ video{
 
 .banner-salsa img{
     max-width: 100%;
+}
+
+#goikocina svg{
+    margin-bottom: 100px;
 }
