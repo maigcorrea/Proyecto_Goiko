@@ -409,3 +409,49 @@ video{
     text-decoration: none;
     font-size: 24px;
 }
+
+
+/* GOIKOCINA */
+#goikocina{
+    padding-top: 8%;
+    padding-bottom:5%;
+}
+.goikocina-container{
+    display: flex;
+    align-items: center;
+    /* width: 100vh;
+    justify-content: space-between; */
+}
+
+.goikocinaTexto{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color: white;
+    margin-left: 55px;
+}
+
+.goikocinaTexto h2{
+    font-size: 80px;
+    font-family: "Nunito Sans";
+    line-height: 70px;
+    padding:75px 0;
+}
+
+.goikocinaTexto p{
+    font-family: "Nunito Sans";
+}
+
+.goikocinaTexto a{
+    color: white;
+    text-decoration: none;
+    font-family: "Knockout Bold";
+    border:2px solid white;
+    width: 40%;
+    padding:10px 20px;
+    border-radius: 20px;
+}
+
+.banner-salsa img{
+    max-width: 100%;
+}
