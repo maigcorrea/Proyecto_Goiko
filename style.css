@@ -296,6 +296,7 @@ nav{
 /* SECCION 4 */
 #contador{
     text-align: center;
+    padding-bottom: 10%;
 }
 
 #contador img{
@@ -315,4 +316,48 @@ nav{
     padding:3% 0;
 }
 
+/* SECCIÓN 5 */
+#registro{
+    background:-webkit-linear-gradient(black ,rgb(151, 29, 39));
+    padding-bottom: 5%;
+}
 
+.texto-moneda{
+    color: white;
+    width: 80%;
+}
+
+.texto-moneda h2{
+    font-size: 70px;
+    line-height: 64px;
+}
+
+.texto-moneda p{
+    font-family: "Nunito Sans";
+    padding: 25px 0;
+}
+
+.texto-moneda a{
+    color: white;
+    text-decoration: none;
+    padding:10px 15px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.container-moneda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+}
+
+.moneda{
+    width: 55%;
+}
+
+.moneda img{
+    /* max-width: 100%; */
+    width: 80%;
+}
