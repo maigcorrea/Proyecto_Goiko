@@ -464,22 +464,13 @@ video{
 }
 
 /* SECCIÓN 7 - GOIKO NEWS */
-/* .cartas{
-    animation-name:rotarDcha;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: reverse;
-    animation-delay: 0s;
-    white-space:nowrap;
-} */
 
-.banner-news span:nth-child(odd){
+.banner-news p{
     color: black;
     -webkit-text-stroke: 1.5px white;
 }
 
-.banner-news span:nth-child(even){
+.banner-news span{
     color: white;
     -webkit-text-stroke: 1.5px white;
 }
