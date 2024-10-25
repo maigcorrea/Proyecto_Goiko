@@ -497,7 +497,10 @@ video{
 
 #goikoNews{
     padding-bottom: 5%;
+    border-radius: 40px; /*NO FUNCIONA EL BORDER RADIUS */
+    overflow: hidden;
 }
+
 .news-container{
     padding:60px 0;
     display: flex;
@@ -569,3 +572,10 @@ video{
     padding: 20px 40px;
 }
 
+
+/* FOOTER */
+
+footer{
+    height: 70vh;
+    background-color: white;
+}
