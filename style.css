@@ -365,11 +365,47 @@ nav{
 
 
 /* FOODTRUCK */
+#truck{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
 .contenedor-video{
     position: relative;
+    z-index: -999;
 }
 
 .video-truck{
     position:absolute;
+    z-index: -999;
 }
 
+video{
+    position: absolute;
+    width: auto;
+}
+
+
+/* LETRAS SOBRE EL VIDEO  */
+.contenido-video{
+    position: absolute;
+    color: white;
+    top: 550px;
+    line-height: 62px;
+    padding:0 50px;
+}
+
+.contenido-video h2{
+    font-size: 72px;
+    margin-bottom: 15px;
+}
+
+.contenido-video p{
+    font-family: "Nunito Sans";
+}
+
+.contenido-video a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
