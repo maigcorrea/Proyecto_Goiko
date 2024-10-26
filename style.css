@@ -579,13 +579,13 @@ footer{
     height: 100vh;
     background-color: white;
     padding-top: 7%;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .footer-container{
     display:flex;
     justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .logo-footer{
@@ -593,8 +593,7 @@ footer{
 }
 
 .footer-container svg{
-    max-width: 100%;
-    
+    max-width: 100%; 
 }
 
 .opc1{
@@ -626,7 +625,9 @@ footer{
     align-items: baseline;
     padding-top:20px;
     width: 15%;
+    padding-left: 50px;
 }
+
 .social-media svg{
     width: 30px;
 }
@@ -646,3 +647,39 @@ footer{
     width: 100%;
 } */
 
+/* PALABRAS CHORREOFOREVER EN MOVIMIENTO */
+
+.chorreo-container{
+    width: 100%;
+    font-size: 140px;
+    text-wrap:nowrap;
+    z-index: -999;
+    overflow: hidden;
+    margin-top: 15px;
+    border-top:solid 2px rgb(0, 0, 0);
+    border-bottom:solid 2px rgb(0, 0, 0);
+}
+
+.banner-news p{
+    color: black;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+
+.chorreoForever span{
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.chorreoForever{
+    animation-name:rotarRev;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    white-space:nowrap;
+}
+
+@keyframes rotarRev {
+    from{transform: translateX(0%);}
+    to{transform: translateX(-130%);}
+}
