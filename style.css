@@ -576,7 +576,7 @@ video{
 /* FOOTER */
 
 footer{
-    height: 100vh;
+    height: 120vh;
     background-color: white;
     padding-top: 7%;
 }
@@ -682,4 +682,51 @@ footer{
 @keyframes rotarRev {
     from{transform: translateX(0%);}
     to{transform: translateX(-130%);}
+}
+
+/* CONDICIONES LEGALES Y MARCA */
+footer>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1% 2%;
+}
+
+footer>div:last-child>p{
+    width: 40%;
+}
+
+footer>div:last-child>div{
+display: flex;
+justify-content: space-between;
+width: 30%;
+font-size: 15px;
+}
+
+footer>div:last-child span{
+    font-family: "Knockout";
+}
+
+footer>div:last-child a{
+    color: black;
+    text-decoration: none;
+    font-family: "Knockout";
+    text-transform: uppercase;
+}
+
+.hoverTop{
+    display: flex;
+    justify-content: start;
+}
+
+.oculto, .top{
+    visibility: hidden;
+}
+
+.punto{
+    width: 3%;
+}
+
+.punto img{
+    max-width: 100%;
 }
