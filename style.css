@@ -83,6 +83,12 @@ nav{
     background-color: red;
 }
 
+/* MENU DESPLEGABLE */
+
+.desplegable{
+    position: absolute;
+    top:-100%;
+}
 
 /* BANNER */
 
