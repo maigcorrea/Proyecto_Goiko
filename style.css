@@ -781,6 +781,60 @@ footer>div:last-child a{
         /* margin: auto; */
         /* bottom: 292px; */
     }
+
+
+    /* FOOTER */
+
+    footer {
+        height: 153vh;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .opc1 {
+        width: 100%;
+    }
+
+    .opc2 {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .social-media {
+        width: 25%;
+    }
+
+    footer>div:last-child {
+        display: block;
+        width: 100%;
+        padding: 1% 2%;
+    }
+
+    footer>div:last-child>p {
+        width: 100%;
+    }
+
+    footer>div:last-child>div {
+        display: block;
+        width: 26%;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+
+    footer>div:last-child>div p{
+        display: none;
+    }
+
+    .hoverTop{
+        display: none;
+    }
+
+    .punto {
+        display: none;
+    } 
 }
 
 
