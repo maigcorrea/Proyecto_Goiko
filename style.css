@@ -742,3 +742,242 @@ footer>div:last-child a{
 .punto img{
     max-width: 100%;
 }
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:992px){
+    /* GOIKONEWS */
+
+    #goikoNews {
+        padding-bottom: 5%;
+        border-radius: 40px;
+        overflow: hidden;
+        height: 270vh;
+    }
+
+    .news-container {
+        display: block;
+        padding: 60px 0;
+        margin: 0 30px;
+
+    }
+
+    .new {
+        width: 100%;
+        height: 86%;
+        margin-bottom: 90px;
+    }
+
+    #goikoNews>div:nth-child(3) {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 55%;
+        /* position: absolute; */
+        /* margin: auto; */
+        /* bottom: 292px; */
+    }
+}
+
+
+@media screen and (max-width:768px){
+    /* BANNER */
+
+    #banner-hamb{
+        width: 100%;
+        height: 60vh;
+        line-height: 120px;
+        margin-top: 12%;
+    }
+
+    .video{
+        height: 96vh;
+        width: 80vh;
+        margin: 0 auto 4vh;
+        position:absolute;
+        top:45%;
+        left:55%;
+        transform: translate(-50%,-55%);
+        align-content: center;
+    }
+    
+    .video video{
+        max-width: 70vh;
+        height: auto;
+        margin-top: 7%;
+    }
+
+
+    /* PALABRAS "CARTA" EN MOVIMIENTO */
+
+    .carta-container{
+        width: 100%;
+        font-size: 100px;
+        text-wrap:nowrap;
+        z-index: -999;
+        overflow: hidden;
+        margin-top: 15px;
+        border-top:solid 2px white;
+        border-bottom:solid 2px white;
+    }
+
+
+    /* SECCIÓN 2- CARTA */
+    .menu-container{
+        padding:60px 0;
+        display: flex;
+        gap: 30px;
+        /* justify-content: space-around; */
+        margin-left:50px;
+        width:600%; /*  con display flex solo no funciona, no se porqué, SÓLO FUNCIONA ASÍ */
+    }
+
+
+    /* SECCIÓN 3 - KEVIN BACON VENDIDAS ESTE AÑO */
+    #contador h2{
+        color: white;
+        font-size: 35px;
+        margin: 10px 50px;;
+    }
+
+    .cont{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        padding:3% 0;
+    }
+
+    #contador img{
+        width: 60px;
+    }
+
+    /* SECCIÓN MONEDA */
+
+    .container-moneda{
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+    
+    .moneda{
+        width: 50%;
+        margin: auto;
+    }
+    
+    .moneda img{
+        /* max-width: 100%; */
+        width: 100%;
+    }
+
+    .texto-moneda {
+        width: 100%;
+        margin: 20px 30px;
+    }
+
+
+    /* FOODTRUCK */
+
+    #truck {
+        position: relative;
+        height: 68vh;
+        overflow: hidden;
+    }
+
+    .contenido-video{
+        position: absolute;
+        color: white;
+        top: 530px;
+        padding:0 50px;
+    }
+
+    .contenido-video p {
+        font-family: "Nunito Sans";
+        line-height: 20px;
+    }
+
+    .video-truck {
+        position: absolute;
+        z-index: -999;
+        width: 167%;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+    }
+
+
+    /*GOIKOCINA*/
+    .goikocina-container {
+        display: block;
+    }
+
+    .goikocinaTexto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+        margin-left: 55px;
+        margin-bottom: 40px;
+    }
+
+    .goikocinaTexto h2 {
+        font-size: 60px;
+        font-family: "Nunito Sans";
+        line-height: 70px;
+        padding: 50px 0;
+        margin-right: 55px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    /* MENU */
+    .page__header__logo{
+        width: 40%;
+    }
+
+    /* .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        width: 93%;
+        margin: 0px 80px;
+        align-items: center;
+    }
+
+    .nav-bar a{
+        text-decoration: none;
+        font-size: 12px;
+        color: white;
+        border:2px solid white;   
+        padding: 12px 25px;  
+        border-radius: 25px; 
+    } */
+
+
+    /* BANNER */
+
+    .video{
+        height: 96vh;
+        width: 80vh;
+        margin: 0 auto 4vh;
+        position:absolute;
+        top:45%;
+        left:55%;
+        transform: translate(-50%,-55%);
+        align-content: center;
+    }
+    
+    .video video{
+        max-width: 70vh;
+        height: auto;
+        margin-top: 9%;
+    }
+
+}
