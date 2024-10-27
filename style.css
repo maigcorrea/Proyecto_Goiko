@@ -750,6 +750,76 @@ footer>div:last-child a{
 /* RESPONSIVE */
 
 @media screen and (max-width:992px){
+
+    /* BANNER HAMBURGUESA */
+
+    .video {
+        height: 96vh;
+        width: 96vh;
+        margin: 0px auto 4vh;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -55%);
+    }
+
+    .video video {
+        max-width: 70vh;
+        height: auto;
+        margin-top: 4%;
+    }
+
+
+    /* KEVINBACON VENDIDAS ESTE AÑO */
+
+    .cont {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        padding: 3% 0;
+    }
+
+    #contador img{
+        width: 70px;
+    }
+
+    /* GOIKOCINA */
+    .goikocina-container {
+        display: block;
+    }
+
+    .goikocinaTexto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+        margin-left: 55px;
+        margin-bottom: 40px;
+    }
+
+    .goikocinaTexto h2 {
+        font-size: 80px;
+        font-family: "Nunito Sans";
+        line-height: 70px;
+        padding: 50px 0;
+        margin-right: 55px;
+    }
+
+    .goikocinaTexto a {
+        color: white;
+        text-decoration: none;
+        font-family: "Knockout Bold";
+        border: 2px solid white;
+        width: 85%;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+
+
+
     /* GOIKONEWS */
 
     #goikoNews {
@@ -893,7 +963,6 @@ footer>div:last-child a{
 
     /* SECCIÓN 3 - KEVIN BACON VENDIDAS ESTE AÑO */
     #contador h2{
-        color: white;
         font-size: 35px;
         margin: 10px 50px;;
     }
@@ -988,6 +1057,30 @@ footer>div:last-child a{
         padding: 50px 0;
         margin-right: 55px;
     }
+
+    .goikocinaTexto a {
+        color: white;
+        text-decoration: none;
+        font-family: "Knockout Bold";
+        border: 2px solid white;
+        width: 85%;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    /* FOOTER */
+    
+    .chorreo-container{
+        width: 100%;
+        font-size: 100px;
+        text-wrap: nowrap;
+        z-index: -999;
+        overflow: hidden;
+        margin-top: 15px;
+        border-top: solid 2px rgb(0, 0, 0);
+        border-bottom: solid 2px rgb(0, 0, 0);
+    }
 }
 
 
@@ -1032,6 +1125,129 @@ footer>div:last-child a{
         max-width: 70vh;
         height: auto;
         margin-top: 9%;
+    }
+
+
+    /* SECCIÓN 3 - KEVIN BACON VENDIDAS ESTE AÑO */
+    #contador img{
+        width: 40px;
+    }
+
+
+    #contador h2{
+        font-size: 30px;
+        margin: 10px 50px;;
+    }
+
+
+    /* SECCIÓN 4 MONEDA */
+    
+    .texto-moneda {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .texto-moneda h2{
+        font-size: 50px;
+        line-height: 64px;
+        margin-left:30px;
+    }
+
+    .texto-moneda p{
+        width: 60%;
+        margin-left:30px;
+    }
+
+    .reg{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .texto-moneda a{
+        display: block;
+    }
+
+
+    /* FOODTRUCK */
+
+    #truck {
+        position: relative;
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    .contenido-video{
+        position: absolute;
+        color: white;
+        top: 290px;
+        padding:0 20px;
+    }
+
+    .contenido-video p {
+        font-family: "Nunito Sans";
+        line-height: 20px;
+    }
+
+    .video-truck {
+        position: absolute;
+        z-index: -999;
+        width: 167%;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+    }
+
+    .contenido-video h2 {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
+
+    .contenido-video p {
+        font-family: "Nunito Sans";
+        line-height: 20px;
+        width: 60%;
+    }
+
+    .contenido-video a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    /* GOIKOCINA */
+    .goikocinaTexto a {
+        color: white;
+        text-decoration: none;
+        font-family: "Knockout Bold";
+        border: 2px solid white;
+        width: 80%;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+
+    /* SECCIÓN NOTICIAS - GOIKONEWS */
+
+    #goikoNews {
+        height: 287vh;
+    }
+
+    .new {
+        margin-bottom: 125px;
+    }
+
+    #goikoNews>div:nth-child(3) {
+        top: 58%;
+    }
+    
+
+    /* FOOTER */
+    footer {
+        height: 220vh;
     }
 
 }
