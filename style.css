@@ -856,7 +856,7 @@ footer>div:last-child a{
     /* FOOTER */
 
     footer {
-        height: 153vh;
+        height: 190vh;
     }
 
     .footer-container {
@@ -923,7 +923,7 @@ footer>div:last-child a{
         width: 80vh;
         margin: 0 auto 4vh;
         position:absolute;
-        top:45%;
+        top:0%;
         left:55%;
         transform: translate(-50%,-55%);
         align-content: center;
@@ -1110,12 +1110,29 @@ footer>div:last-child a{
 
     /* BANNER */
 
+    #banner-hamb{
+        width: 100%;
+        height: 70vh;
+        line-height: 120px;
+        margin-top: 22%;
+    }
+
+    .letter-container {
+        position: absolute;
+        width: 100%;
+        font-size: 120px;
+        text-wrap: nowrap;
+        z-index: -999;
+        overflow: hidden;
+        margin-top: 5%;
+    }
+
     .video{
         height: 96vh;
         width: 80vh;
         margin: 0 auto 4vh;
         position:absolute;
-        top:45%;
+        top:0%;
         left:55%;
         transform: translate(-50%,-55%);
         align-content: center;
@@ -1124,7 +1141,7 @@ footer>div:last-child a{
     .video video{
         max-width: 70vh;
         height: auto;
-        margin-top: 9%;
+        margin-top: 13%;
     }
 
 
