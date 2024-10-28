@@ -88,6 +88,30 @@ nav{
 .desplegable{
     position: absolute;
     top:-100%;
+    width: 100%;
+    z-index: 1000;
+    overflow:hidden;
+    transition: top 0.5s linear;
+}
+
+.desplegable a {
+    color: white; /* O cualquier otro color visible */
+    font-size: 120px;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 144px;
+    line-height: 120px;
+}
+
+.letrasDesp{
+    margin-top: 30px;
+}
+
+.cerrarMenu div:nth-child(1)>svg{
+    background-color: black;
+    padding:20px;
+    width: 140px;
+    height: 140px;
 }
 
 /* BANNER */
@@ -240,6 +264,8 @@ nav{
 
 .oferta a{
     font-size: 30px;
+    color: white;
+    text-decoration: none;
 } 
 
 
@@ -292,6 +318,11 @@ nav{
 
 .elemento-menu{
     width: 10%;
+}
+
+
+.elemento-menu a{
+    text-decoration: none;
 }
 
 .texto{
