@@ -12,5 +12,14 @@ btnAbrir.addEventListener("click",()=>{ //Cuando hago click en el icono se despl
     // desp.style.display="flex";
     // desp.style.flexDirection="column";
     // desp.style.alignItems="center";
+});
+
+
+
+let btnCerrar=document.querySelector(".cerrarMenu div:nth-child(1)>svg");
+
+btnCerrar.addEventListener("click",()=>{
+    desp.style.top="-100%";
 })
+
 })

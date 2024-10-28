@@ -94,8 +94,8 @@ nav{
     transition: top 0.5s linear;
 }
 
-.desplegable a {
-    color: white; /* O cualquier otro color visible */
+.letrasDesp a {
+    color: white;
     font-size: 120px;
     text-decoration: none;
     text-align: left;
@@ -104,7 +104,32 @@ nav{
 }
 
 .letrasDesp{
-    margin-top: 30px;
+    margin-top: 25px;
+}
+
+.palabrasDebajo{
+    display: flex;
+    width: 51%;
+    flex-wrap: wrap;
+}
+
+.palabrasDebajo a{
+    color: white;
+    font-size: 28px;
+    font-family: "Knockout";
+    text-decoration: none;
+    text-align: left;
+    margin-left: 144px;
+    line-height: 32px;
+}
+
+.palabrasDebajo a:nth-child(1){
+    width: 24%;
+}
+
+.palabrasDebajo a:nth-child(3){
+    width: 24%;
+    background-color: blue;
 }
 
 .cerrarMenu div:nth-child(1)>svg{
