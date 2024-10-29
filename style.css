@@ -111,6 +111,7 @@ nav{
     display: flex;
     width: 51%;
     flex-wrap: wrap;
+    margin-top:45px;
 }
 
 .palabrasDebajo a{
@@ -121,17 +122,71 @@ nav{
     text-align: left;
     margin-left: 144px;
     line-height: 32px;
+    margin-bottom: 10px;
 }
 
 .palabrasDebajo a:nth-child(1){
     width: 24%;
 }
 
-.palabrasDebajo a:nth-child(3){
+.f{
     width: 24%;
-    background-color: blue;
 }
 
+.socialMedia-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    margin-left: 144px;
+    margin-top: 30px;
+}
+
+.socialMedia-menu svg{
+    fill: white;
+    width: 25px;
+    height: 25px;
+}
+
+/* .socialMedia-menu a::after{
+    border-style: solid;
+    border-width: .09375rem;
+    border-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+} */
+
+/* .unico{
+    display: flex;
+} */
+
+.rueda{
+    position: absolute;
+    bottom: 38px;
+    right: 38px;
+}
+
+.rueda svg{
+    width: 320px;
+    height: 320px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 200px;
+}
+
+.filled{
+    fill: white;
+}
+
+.stroked{
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: white;
+}
 .cerrarMenu div:nth-child(1)>svg{
     background-color: black;
     padding:20px;
