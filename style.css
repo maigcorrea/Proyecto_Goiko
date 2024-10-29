@@ -103,6 +103,11 @@ nav{
     line-height: 120px;
 }
 
+.letrasDesp a:hover{
+    color: transparent;
+    -webkit-text-stroke: white 3px;
+}
+
 .letrasDesp{
     margin-top: 25px;
 }
