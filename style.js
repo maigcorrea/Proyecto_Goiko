@@ -21,6 +21,7 @@ let btnCerrar=document.querySelector(".cerrarMenu div:nth-child(1)>svg");
 
 btnCerrar.addEventListener("click",()=>{
     desp.style.top="-100%";
+    body.style.overflow = "visible";
 })
 
 })
