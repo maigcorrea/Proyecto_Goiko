@@ -87,7 +87,7 @@ nav{
 
 .desplegable{
     position: absolute;
-    top:-100%;
+    top:-200%;
     width: 100%;
     z-index: 1000;
     overflow:hidden;
@@ -192,11 +192,19 @@ nav{
     stroke-width: 2px;
     stroke: white;
 }
+
 .cerrarMenu div:nth-child(1)>svg{
     background-color: black;
     padding:20px;
     width: 140px;
     height: 140px;
+}
+
+.text__logo{
+    width: 150px;
+    fill: white;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%) translateX(-100%);
 }
 
 /* BANNER */
@@ -634,6 +642,15 @@ video{
     overflow: hidden;
 }
 
+#goikoNews a{
+    text-decoration: none;
+}
+
+#goikoNews a:hover{
+    text-decoration-line:underline;
+    text-decoration-color: white;
+}
+
 .news-container{
     padding:60px 0;
     display: flex;
@@ -747,9 +764,18 @@ footer{
     color: black;
 }
 
+.opc1 a:hover{
+    color: transparent;
+    -webkit-text-stroke: black 3px;
+}
+
 .opc2 a{
     text-decoration: none;
     color: black;
+}
+
+.opc2 a:hover{  
+    text-decoration: underline;
 }
 
 .social-media{
@@ -867,6 +893,15 @@ footer>div:last-child a{
 
 @media screen and (max-width:992px){
 
+    /*MENU*/
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        width: 26%;
+        margin: 0px 80px;
+        align-items: center;
+    }
+    
     /* BANNER HAMBURGUESA */
 
     .video {
