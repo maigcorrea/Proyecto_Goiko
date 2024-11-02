@@ -207,7 +207,7 @@ nav{
 
 .text__logo{
     width: 100px;
-    top:50px;
+    top:100px;
     fill: white;
     position: absolute;
     transform: rotate(-90deg) translateY(-50%) translateX(-100%);
@@ -983,7 +983,6 @@ footer>div:last-child a{
 
 
 
-
 /* RESPONSIVE */
 @media screen and (max-width:1800px){
     /* BANNER HAMBURGUESA */
@@ -1001,11 +1000,11 @@ footer>div:last-child a{
         margin-top: 7%;
     }
     /* GOIKOCINA */
-    /* .goikocinaTexto a {
-        width: 55%;
+    .goikocinaTexto a {
+        width: 75%;
         text-align: center;
         padding: 10px 20px;
-    } */
+    }
 
     .banner-salsa img:nth-child(1){
         width: 40%;
