@@ -5,9 +5,9 @@ let body=document.querySelector("body");
 
 btnAbrir.addEventListener("click",()=>{ //Cuando hago click en el icono se despliega el menu   
     console.log("CLICK DETECTADO");
-    desp.style.top="0%";
-    desp.style.transition="top 0.5s linear";
-    desp.style.height="100vh";
+    // desp.style.top="0%";
+    // desp.style.transition="top 0.5s linear";
+    desp.style.height="100%";
     desp.style.backgroundColor="#ee2737";
     body.style.overflow = "hidden";
 });
@@ -17,7 +17,8 @@ btnAbrir.addEventListener("click",()=>{ //Cuando hago click en el icono se despl
 let btnCerrar=document.querySelector(".cerrarMenu div:nth-child(1)>svg");
 
 btnCerrar.addEventListener("click",()=>{
-    desp.style.top="-100%";
+    // desp.style.top="-200%";
+    desp.style.height="0%";
     body.style.overflow = "visible";
 })
 

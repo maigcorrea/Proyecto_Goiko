@@ -66,10 +66,6 @@ nav{
     align-items: center;
 }
 
-/* .nav-bar div{
-    
-} */
-
 .nav-bar a{
     text-decoration: none;
     color: white;
@@ -86,12 +82,21 @@ nav{
 /* MENU DESPLEGABLE */
 
 .desplegable{
-    position: absolute;
+    /* position: fixed;
     top:-200%;
+    height: 0;
     width: 100%;
     z-index: 1000;
     overflow:hidden;
-    transition: top 0.5s linear;
+    transition: height 0.5s linear; */
+    position: fixed;
+    top: 0%;
+    height: 0;
+    width: 100%;
+    bottom: 100%;
+    transition: height 0.5s linear;
+    overflow: hidden ;
+    z-index: 1000;
 }
 
 .letrasDesp a {
@@ -201,7 +206,8 @@ nav{
 }
 
 .text__logo{
-    width: 150px;
+    width: 100px;
+    top:50px;
     fill: white;
     position: absolute;
     transform: rotate(-90deg) translateY(-50%) translateX(-100%);
@@ -1064,7 +1070,40 @@ footer>div:last-child a{
     }
 
     /* MENU DESPLEGABLE */
+    .letrasDesp a {
+        font-size: 70px;
+        margin-left: 100px;
+        line-height: 70px;
+    }
     
+    .palabrasDebajo{
+        display: block;
+        width: 71%;
+        flex-wrap: wrap;
+        margin-top:30%;
+    }
+
+    .palabrasDebajo a{
+        font-size: 18px;
+        margin-left: 100px;
+        line-height: 32px;
+        margin-bottom: 10px
+    }
+
+    .cerrarMenu div:nth-child(1)>svg{
+        width: 100px;
+        height: 100px;
+    }
+
+    .socialMedia-menu{
+        width: 18%;
+        margin-left: 100px;
+    }
+
+    .rueda svg{
+        width: 250px;
+        height: 250px;
+    }
 
     /* BANNER HAMBURGUESA */
     .video {
@@ -1253,8 +1292,15 @@ footer>div:last-child a{
 
 
 @media screen and (max-width:768px){
-    /* BANNER */
 
+     /* MENU DESPLEGABLE */
+     .letrasDesp a {
+        font-size: 50px;
+        margin-left: 100px;
+        line-height: 70px;
+    }
+
+    /* BANNER */
     #banner-hamb{
         width: 100%;
         height: 60vh;
@@ -1341,14 +1387,14 @@ footer>div:last-child a{
 
     #truck {
         position: relative;
-        height: 80vh;
+        height: 90vh;
         overflow: hidden;
     }
 
     .contenido-video{
         position: absolute;
         color: white;
-        top: 500px;
+        top: 450px;
         padding:0 50px;
     }
 
@@ -1487,6 +1533,22 @@ footer>div:last-child a{
         border-radius: 25px; 
     } */
 
+     /* MENU DESPLEGABLE */
+    .letrasDesp a {
+        font-size: 40px;
+        margin-left: 100px;
+        line-height: 50px;
+    }
+
+    .cerrarMenu div:nth-child(1)>svg{
+        width: 80px;
+        height: 80px;
+    }
+
+    .rueda svg{
+        width: 150px;
+        height: 150px;
+    }
 
     /* BANNER */
 
