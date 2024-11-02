@@ -899,7 +899,6 @@ footer>div:last-child a{
         justify-content: space-between;
         width: 26%;
         margin: 0px 80px;
-        align-items: center;
     }
     
     /* BANNER HAMBURGUESA */
@@ -935,6 +934,48 @@ footer>div:last-child a{
         width: 70px;
     }
 
+    /* FOODTRUCK */
+    #truck {
+        position: relative;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    .contenido-video{
+        position: absolute;
+        color: white;
+        top: 400px;
+        padding:0 20px;
+    }
+
+    .video-truck {
+        position: absolute;
+        z-index: -999;
+        width: 167%;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+    }
+
+    .contenido-video h2 {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
+
+    .contenido-video p {
+        font-family: "Nunito Sans";
+        line-height: 20px;
+        width: 80%;
+    }
+
+    .contenido-video a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
     /* GOIKOCINA */
     .goikocina-container {
         display: block;
@@ -944,31 +985,22 @@ footer>div:last-child a{
         display: flex;
         flex-direction: column;
         width: 100%;
-        color: white;
         margin-left: 55px;
         margin-bottom: 40px;
     }
 
     .goikocinaTexto h2 {
         font-size: 80px;
-        font-family: "Nunito Sans";
-        line-height: 70px;
+        line-height: 80px;
         padding: 50px 0;
         margin-right: 55px;
     }
 
     .goikocinaTexto a {
-        color: white;
-        text-decoration: none;
-        font-family: "Knockout Bold";
-        border: 2px solid white;
         width: 85%;
         text-align: center;
         padding: 10px 20px;
-        border-radius: 20px;
     }
-
-
 
 
     /* GOIKONEWS */
@@ -998,9 +1030,6 @@ footer>div:last-child a{
         text-align: center;
         position: relative;
         top: 55%;
-        /* position: absolute; */
-        /* margin: auto; */
-        /* bottom: 292px; */
     }
 
 
@@ -1072,8 +1101,6 @@ footer>div:last-child a{
     .video{
         height: 96vh;
         width: 80vh;
-        margin: 0 auto 4vh;
-        position:absolute;
         top:0%;
         left:55%;
         transform: translate(-50%,-55%);
@@ -1090,23 +1117,14 @@ footer>div:last-child a{
     /* PALABRAS "CARTA" EN MOVIMIENTO */
 
     .carta-container{
-        width: 100%;
         font-size: 100px;
-        text-wrap:nowrap;
-        z-index: -999;
-        overflow: hidden;
-        margin-top: 15px;
-        border-top:solid 2px white;
-        border-bottom:solid 2px white;
     }
-
 
     /* SECCIÓN 2- CARTA */
     .menu-container{
         padding:60px 0;
         display: flex;
         gap: 30px;
-        /* justify-content: space-around; */
         margin-left:50px;
         width:600%; /*  con display flex solo no funciona, no se porqué, SÓLO FUNCIONA ASÍ */
     }
@@ -1159,14 +1177,14 @@ footer>div:last-child a{
 
     #truck {
         position: relative;
-        height: 68vh;
+        height: 80vh;
         overflow: hidden;
     }
 
     .contenido-video{
         position: absolute;
         color: white;
-        top: 530px;
+        top: 500px;
         padding:0 50px;
     }
 
@@ -1185,6 +1203,53 @@ footer>div:last-child a{
         position: absolute;
         width: 100%;
     }
+
+
+    /* #truck {
+        position: relative;
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    .contenido-video{
+        position: absolute;
+        color: white;
+        top: 290px;
+        padding:0 20px;
+    }
+
+    .contenido-video p {
+        font-family: "Nunito Sans";
+        line-height: 20px;
+    }
+
+    .video-truck {
+        position: absolute;
+        z-index: -999;
+        width: 167%;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+    }
+
+    .contenido-video h2 {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
+
+    .contenido-video p {
+        font-family: "Nunito Sans";
+        line-height: 20px;
+        width: 60%;
+    }
+
+    .contenido-video a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    } */
 
 
     /*GOIKOCINA*/
