@@ -556,6 +556,7 @@ video{
 
 /* GOIKOCINA */
 #goikocina{
+    position: relative;
     padding-top: 8%;
     padding-bottom:8%;
 }
@@ -598,9 +599,97 @@ video{
     border-radius: 20px;
 }
 
-.banner-salsa img{
-    max-width: 100%;
+.banner-salsa{
+    position: absolute;
+    height: 100vh;
+    width: 90vh;
 }
+
+/* .banner-salsa img{
+    width: 20%;
+} */
+
+/* INTENTO DE MOVER LAS COSAS */
+.banner-salsa img:nth-child(1){
+    width: 85%;
+    position: absolute;
+    top:0;
+    z-index: 100;
+    transform-origin: 0% 100%;
+    view-timeline-name: --efecto;
+    view-timeline-axis: block;
+    animation-timeline: --efecto;
+    animation-name:animarBurguer;
+    animation-range:entry 0% cover 100%;
+    animation-fill-mode: both;
+}
+
+.banner-salsa img:nth-child(2){
+    width: 30%;
+    transform-origin: 0% 100%;
+    position: absolute;
+    /* transform:translate(0%, 4.735%) translate3d(483.159px, 0px, 0px) rotate(-23.5654deg); */
+    view-timeline-name: --efecto;
+    view-timeline-axis: block;
+    animation-timeline: --efecto;
+    animation-name:animarSalsa;
+    animation-range:entry 0% cover 100%;
+    animation-fill-mode: both;
+}
+
+.banner-salsa img:nth-child(3){
+    width: 65%;
+    transform-origin: 0% 100%;
+    position: absolute;
+    /* transform:translate(-78.6325%, -7.1873%) translate3d(713.757px, 0px, 0px) rotate(-36.1838deg); */
+    view-timeline-name: --efecto;
+    view-timeline-axis: block;
+    animation-timeline: --efecto;
+    animation-name:animarPan;
+    animation-range:entry 0% cover 100%;
+    animation-fill-mode: both;
+    overflow: hidden;
+}
+
+@keyframes animarBurguer{
+    0%{
+        transform:translateX(0px) translate3d(521.592px, 0px, 0px) rotate(7.805deg);
+        top: 0px;
+    }
+
+    100%{
+        transform:translateX(500px) translate3d(521.592px, 0px, 0px) rotate(7.805deg);
+        top: 400px;
+    }
+}
+
+
+@keyframes animarSalsa{
+    0%{
+        transform:translateX(0px) translate3d(483.159px, 0px, 0px) rotate(-23.5654deg);
+        top: 0px;
+    }
+
+    100%{
+        transform:translateX(500px) translate3d(483.159px, 0px, 0px) rotate(-23.5654deg);
+        top: 300px;
+    }
+}
+
+@keyframes animarPan{
+    0%{
+        transform:translateX(0px) translate3d(517.757px, 0px, 0px) rotate(12.8162deg);
+        top: 0px;
+    }
+
+    100%{
+        transform:translateX(700px) translate3d(517.757px, -100px, 0px) rotate(12.8162deg);
+        top: 300px;
+    }
+}
+
+
+/* FIN DE INTENTO DE MOVER */
 
 #goikocina svg{
     margin-bottom: 100px;
@@ -890,6 +979,79 @@ footer>div:last-child a{
 
 
 /* RESPONSIVE */
+@media screen and (max-width:1800px){
+    /* BANNER HAMBURGUESA */
+    .video{
+        height: 96vh;
+        width: 80vh;
+        top:0%;
+        left:55%;
+        transform: translate(-60%,-55%);
+        align-content: center;
+    }
+    
+    .video video{
+        max-width: 90vh;
+        margin-top: 7%;
+    }
+    /* GOIKOCINA */
+    /* .goikocinaTexto a {
+        width: 55%;
+        text-align: center;
+        padding: 10px 20px;
+    } */
+
+    .banner-salsa img:nth-child(1){
+        width: 40%;
+    }
+    
+    .banner-salsa img:nth-child(2){
+        width: 15%;
+    }
+    
+    .banner-salsa img:nth-child(3){
+        width: 35%;
+    }
+
+    @keyframes animarBurguer{
+        0%{
+            transform:translateX(0px) translate3d(200.592px, 0px, 0px) rotate(7.805deg);
+            top: 0px;
+        }
+    
+        100%{
+            transform:translateX(200px) translate3d(500.592px, 0px, 0px) rotate(7.805deg);
+            top: 450px;
+        }
+    }
+    
+    
+    @keyframes animarSalsa{
+        0%{
+            transform:translateX(0px) translate3d(200.159px, 0px, 0px) rotate(-23.5654deg);
+            top: 0px;
+        }
+    
+        100%{
+            transform:translateX(500px) translate3d(200.159px, 0px, 0px) rotate(-23.5654deg);
+            top: 300px;
+        }
+    }
+    
+    @keyframes animarPan{
+        0%{
+            transform:translateX(0px) translate3d(100.757px, 0px, 0px) rotate(12.8162deg);
+            top: 0px;
+        }
+    
+        100%{
+            transform:translateX(700px) translate3d(80.757px, -50px, 0px) rotate(12.8162deg);
+            top: 300px;
+        }
+
+
+    }
+}
 
 @media screen and (max-width:992px){
 
@@ -900,21 +1062,23 @@ footer>div:last-child a{
         width: 26%;
         margin: 0px 80px;
     }
-    
-    /* BANNER HAMBURGUESA */
 
+    /* MENU DESPLEGABLE */
+    
+
+    /* BANNER HAMBURGUESA */
     .video {
         height: 96vh;
         width: 96vh;
         margin: 0px auto 4vh;
         position: absolute;
-        top: 50%;
+        top: 0%;
         left: 65%;
-        transform: translate(-50%, -55%);
+        transform: translate(-55%, -55%);
     }
 
     .video video {
-        max-width: 70vh;
+        max-width: 80vh;
         height: auto;
         margin-top: 4%;
     }
