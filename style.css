@@ -477,6 +477,10 @@ nav{
     border-radius: 15px;
 }
 
+.elemento-menu img:hover{
+    filter: sepia(1) saturate(3) hue-rotate(-50deg) brightness(0.6) contrast(0.9);
+}
+
 /* .news-container{
     margin-top:5%;
     margin-bottom: 5%;
