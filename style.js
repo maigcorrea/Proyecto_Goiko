@@ -7,8 +7,6 @@ let idiomasDesp=document.querySelector(".idiomas-desplegable");
 
 btnAbrir.addEventListener("click",()=>{ //Cuando hago click en el icono se despliega el menu   
     console.log("CLICK DETECTADO");
-    // desp.style.top="0%";
-    // desp.style.transition="top 0.5s linear";
     desp.style.height="100%";
     desp.style.backgroundColor="#ee2737";
     body.style.overflow = "hidden";

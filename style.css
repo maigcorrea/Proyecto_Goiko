@@ -47,7 +47,6 @@ nav{
     justify-content: space-between;
     height: auto;
     align-items: center;
-    /* top:0%; */
 }
 
 .page__header__logo{
@@ -163,16 +162,14 @@ nav{
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px; /* Grosor de la línea */
-    background-color: #ffffff; /* Color de la línea */
-    transition: width 0.5s ease; /* Duración y tipo de transición */
+    height: 2px; 
+    background-color: #ffffff; 
+    transition: width 0.5s ease;
 }
 
 .palabrasDebajo a:hover::after {
     width: 100%; /* La línea se extiende en hover */
 }
-
-
 
 .socialMedia-menu{
     display: flex;
@@ -187,23 +184,6 @@ nav{
     width: 25px;
     height: 25px;
 }
-
-/* .socialMedia-menu a::after{
-    border-style: solid;
-    border-width: .09375rem;
-    border-color: #fff;
-    border-radius: 50%;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-} */
-
-/* .unico{
-    display: flex;
-} */
 
 .rueda{
     position: absolute;
@@ -504,30 +484,6 @@ nav{
     filter: sepia(1) saturate(3) hue-rotate(-50deg) brightness(0.6) contrast(0.9);
 }
 
-/* .news-container{
-    margin-top:5%;
-    margin-bottom: 5%;
-    padding:20px;
-    display: flex;
-    justify-content: center;
-    gap:20px;
-}
-
-.new{
-    width: 33%;
-}
-
-.img-container{
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-.img-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
 /* SECCION 4 */
 #contador{
@@ -595,7 +551,6 @@ nav{
 }
 
 .moneda img{
-    /* max-width: 100%; */
     width: 80%;
 }
 
@@ -657,8 +612,6 @@ video{
 .goikocina-container{
     display: flex;
     align-items: center;
-    /* width: 100vh;
-    justify-content: space-between; */
 }
 
 .goikocinaTexto{
@@ -698,9 +651,6 @@ video{
     width: 90vh;
 }
 
-/* .banner-salsa img{
-    width: 20%;
-} */
 
 /* INTENTO DE MOVER LAS COSAS */
 .banner-salsa img:nth-child(1){
@@ -721,7 +671,6 @@ video{
     width: 30%;
     transform-origin: 0% 100%;
     position: absolute;
-    /* transform:translate(0%, 4.735%) translate3d(483.159px, 0px, 0px) rotate(-23.5654deg); */
     view-timeline-name: --efecto;
     view-timeline-axis: block;
     animation-timeline: --efecto;
@@ -734,7 +683,6 @@ video{
     width: 65%;
     transform-origin: 0% 100%;
     position: absolute;
-    /* transform:translate(-78.6325%, -7.1873%) translate3d(713.757px, 0px, 0px) rotate(-36.1838deg); */
     view-timeline-name: --efecto;
     view-timeline-axis: block;
     animation-timeline: --efecto;
@@ -1075,7 +1023,8 @@ footer>div:last-child a{
 }
 
 
-/* RESPONSIVE */
+    /* RESPONSIVE */
+
 @media screen and (max-width:1800px){
     /* MENU NORMAL */
 
@@ -1164,21 +1113,13 @@ footer>div:last-child a{
         }
     }
 
-    
+
     footer{
         height: 130vh;
     }
 }
 
 @media screen and (max-width:992px){
-
-    /*MENU*/
-    /* .nav-bar {
-        display: flex;
-        justify-content: space-between;
-        width: 26%;
-        margin: 0px 80px;
-    } */
 
     /* MENU DESPLEGABLE */
     .letrasDesp a {
@@ -1325,18 +1266,14 @@ footer>div:last-child a{
 
     .banner-salsa img:nth-child(1) {
         width: 50%;
-        /* animation-fill-mode: forwards; */
     }
 
     .banner-salsa img:nth-child(2) {
         left: 30%;
         width: 20%;
-        /* animation-fill-mode:none; */
     }
     
     .banner-salsa img:nth-child(3) {
-        /* left: 55%;
-        width: 50%; */
         display: none;
     }
 
@@ -1380,13 +1317,6 @@ footer>div:last-child a{
 
 
     /* GOIKONEWS */
-
-    /* #goikoNews {
-        padding-bottom: 5%;
-        border-radius: 40px;
-        overflow: hidden;
-        height: 270vh;
-    } */
 
     .news-container {
         display: block;
@@ -1507,7 +1437,7 @@ footer>div:last-child a{
         display: flex;
         gap: 30px;
         margin-left:50px;
-        width:600%; /*  con display flex solo no funciona, no se porqué, SÓLO FUNCIONA ASÍ */
+        width:600%; 
     }
 
 
@@ -1544,7 +1474,6 @@ footer>div:last-child a{
     }
     
     .moneda img{
-        /* max-width: 100%; */
         width: 100%;
     }
 
@@ -1586,53 +1515,6 @@ footer>div:last-child a{
     }
 
 
-    /* #truck {
-        position: relative;
-        height: 60vh;
-        overflow: hidden;
-    }
-
-    .contenido-video{
-        position: absolute;
-        color: white;
-        top: 290px;
-        padding:0 20px;
-    }
-
-    .contenido-video p {
-        font-family: "Nunito Sans";
-        line-height: 20px;
-    }
-
-    .video-truck {
-        position: absolute;
-        z-index: -999;
-        width: 167%;
-    }
-
-    video {
-        position: absolute;
-        width: 100%;
-    }
-
-    .contenido-video h2 {
-        font-size: 55px;
-        margin-bottom: 15px;
-    }
-
-    .contenido-video p {
-        font-family: "Nunito Sans";
-        line-height: 20px;
-        width: 60%;
-    }
-
-    .contenido-video a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-    } */
-
-
     /*GOIKOCINA*/
     .goikocina-container {
         display: block;
@@ -1665,6 +1547,8 @@ footer>div:last-child a{
         padding: 10px 20px;
         border-radius: 20px;
     }
+
+
     /* FOOTER */
     
     .chorreo-container{
@@ -1686,22 +1570,6 @@ footer>div:last-child a{
         width: 40%;
     }
 
-    /* .nav-bar{
-        display: flex;
-        justify-content: space-between;
-        width: 93%;
-        margin: 0px 80px;
-        align-items: center;
-    }
-
-    .nav-bar a{
-        text-decoration: none;
-        font-size: 12px;
-        color: white;
-        border:2px solid white;   
-        padding: 12px 25px;  
-        border-radius: 25px; 
-    } */
 
      /* MENU DESPLEGABLE */
     .letrasDesp a {
@@ -1719,6 +1587,7 @@ footer>div:last-child a{
         width: 150px;
         height: 150px;
     }
+
 
     /* BANNER */
 
