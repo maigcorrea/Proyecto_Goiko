@@ -29,6 +29,7 @@
 body{
     background-color: black;
     font-family: "Knockout Bold";
+    overflow-x: hidden;
 }
 
 header{
@@ -1106,6 +1107,15 @@ footer>div:last-child a{
         width: 80px;
     }
 
+    /* FOODTRUCK */
+    .contenido-video{
+        position: absolute;
+        color: white;
+        top: 580px;
+        line-height: 40px;
+        padding:0 20px;
+    }
+
     /* GOIKOCINA */
     .goikocinaTexto a {
         width: 75%;
@@ -1340,7 +1350,7 @@ footer>div:last-child a{
         }
     
         100%{
-            transform:translateX(0px) translate3d(521.592px, 0px, 0px) rotate(7.805deg);
+            transform:translateX(0px) translate3d(421.592px, -110px, 0px) rotate(7.805deg);
             top: 900px;
         }
     }
@@ -1354,7 +1364,7 @@ footer>div:last-child a{
     
         100%{
             transform: rotate(-23.5654deg);
-            top: 950px;
+            top: 750px;
         }
     }
     
