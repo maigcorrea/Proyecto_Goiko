@@ -637,7 +637,7 @@ video{
     view-timeline-axis: block;
     animation-timeline: --efecto;
     animation-name:animarBurguer;
-    animation-range:entry 0% cover 100%;
+    animation-range:entry 0% cover 200%;
     animation-fill-mode: both;
 }
 
@@ -650,7 +650,7 @@ video{
     view-timeline-axis: block;
     animation-timeline: --efecto;
     animation-name:animarSalsa;
-    animation-range:entry 0% cover 100%;
+    animation-range:entry 0% cover 200%;
     animation-fill-mode: both;
 }
 
@@ -663,7 +663,7 @@ video{
     view-timeline-axis: block;
     animation-timeline: --efecto;
     animation-name:animarPan;
-    animation-range:entry 0% cover 100%;
+    animation-range:entry 0% cover 200%;
     animation-fill-mode: both;
     overflow: hidden;
 }
@@ -1078,8 +1078,6 @@ footer>div:last-child a{
             transform:translateX(700px) translate3d(80.757px, -50px, 0px) rotate(12.8162deg);
             top: 300px;
         }
-
-
     }
 }
 
@@ -1206,6 +1204,7 @@ footer>div:last-child a{
     /* GOIKOCINA */
     .goikocina-container {
         display: block;
+        height: 1000px;
     }
 
     .goikocinaTexto {
@@ -1227,6 +1226,67 @@ footer>div:last-child a{
         width: 85%;
         text-align: center;
         padding: 10px 20px;
+    }
+
+    .banner-salsa {
+        height: 100vh;
+        width: 90vh;
+        top: 50px;
+    }
+
+    .banner-salsa img:nth-child(1) {
+        width: 50%;
+        /* animation-fill-mode: forwards; */
+    }
+
+    .banner-salsa img:nth-child(2) {
+        left: 30%;
+        width: 20%;
+        /* animation-fill-mode:none; */
+    }
+    
+    .banner-salsa img:nth-child(3) {
+        /* left: 55%;
+        width: 50%; */
+        display: none;
+    }
+
+    @keyframes animarBurguer{
+        0%{
+            transform: translateX(0px) translate3d(-66.408px, 0px, 0px) rotate(7.805deg);
+            top: 50%;
+        }
+    
+        100%{
+            transform:translateX(0px) translate3d(521.592px, 0px, 0px) rotate(7.805deg);
+            top: 900px;
+        }
+    }
+    
+    
+    @keyframes animarSalsa{
+        0%{
+            transform:translateX(0px) translate3d(-250.841px, 0px, 0px) rotate(-23.5654deg);
+            top: 0px;
+        }
+    
+        100%{
+            transform: rotate(-23.5654deg);
+            top: 950px;
+        }
+    }
+    
+    @keyframes animarPan{
+        0%{
+            transform:translateX(0px) translate3d(517.757px, 0px, 0px) rotate(5.8162deg);
+            top: 0px;
+        }
+    
+        100%{
+            transform: rotate(-50.8162deg);
+            top: 950px;
+            left: 70%;
+        }
     }
 
 
@@ -1512,7 +1572,6 @@ footer>div:last-child a{
         padding: 10px 20px;
         border-radius: 20px;
     }
-
     /* FOOTER */
     
     .chorreo-container{
