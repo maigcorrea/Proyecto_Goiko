@@ -26,22 +26,20 @@ btnCerrar.addEventListener("click",()=>{
 
 //CAMBIAR EL BOTON DE HACER PEDIDO
 // Selecciona el primer enlace dentro del div con id "contenedor"
-// const btnPedido = document.querySelector(".nav-bar>a");
-// const nav=document.querySelector(".nav-bar");
+const btnPedido = document.querySelector(".nav-bar>a");
+const nav=document.querySelector(".nav-bar");
 
-// // Crea una función que verifica el ancho de la pantalla
-// function cambiarTextoPedido() {
-//   if (window.matchMedia("(max-width: 992px)").matches) {
-//     btnPedido.textContent = "PEDIR";
-//     nav.style.width="30%";
-//   } else {
-//     btnPedido.textContent = "HACER PEDIDO";
-//     nav.style.width="38%";
-//   }
-// }
+// Crea una función que verifica el ancho de la pantalla
+function cambiarTextoPedido() {
+  if (window.matchMedia("(max-width: 992px)").matches) {
+    btnPedido.textContent = "PEDIR";
+  } else {
+    btnPedido.textContent = "HACER PEDIDO";
+  }
+}
 
-// // Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
-// window.addEventListener("load", cambiarTextoPedido);
-// window.addEventListener("resize", cambiarTextoPedido);
+// Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
+window.addEventListener("load", cambiarTextoPedido);
+window.addEventListener("resize", cambiarTextoPedido);
 
 })
