@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
 let btnAbrir=document.querySelector(".iconos svg:nth-child(2)");//El icono para abrir el menú
 let desp=document.querySelector(".desplegable");
 let body=document.querySelector("body");
+let flechaIdiomas=document.querySelector(".idiomas svg");
+let idiomasDesp=document.querySelector(".idiomas-desplegable");
 
 btnAbrir.addEventListener("click",()=>{ //Cuando hago click en el icono se despliega el menu   
     console.log("CLICK DETECTADO");
@@ -24,7 +26,8 @@ btnCerrar.addEventListener("click",()=>{
 
 
 
-//CAMBIAR EL BOTON DE HACER PEDIDO
+//CAMBIAR EL BOTON DE HACER PEDIDO POR "PEDIR"
+
 // Selecciona el primer enlace dentro del div con id "contenedor"
 const btnPedido = document.querySelector(".nav-bar>a");
 const nav=document.querySelector(".nav-bar");
@@ -41,5 +44,17 @@ function cambiarTextoPedido() {
 // Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
 window.addEventListener("load", cambiarTextoPedido);
 window.addEventListener("resize", cambiarTextoPedido);
+
+
+
+//DESPLEGAR LOS IDIOMAS OCULTOS
+flechaIdiomas.addEventListener("click",()=>{
+    if(idiomasDesp.style.opacity==="1"){
+        idiomasDesp.style.opacity="0";
+    }else{
+        idiomasDesp.style.opacity="1";
+    }
+})
+
 
 })

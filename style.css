@@ -90,8 +90,11 @@ nav{
 
 .idiomas-desplegable{
     position: absolute;
-    top:100px;
-    display: none;
+    top:110px;
+    width: 100px;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 
 /* MENU DESPLEGABLE */
