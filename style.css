@@ -1163,6 +1163,11 @@ footer>div:last-child a{
             top: 300px;
         }
     }
+
+    
+    footer{
+        height: 130vh;
+    }
 }
 
 @media screen and (max-width:992px){
