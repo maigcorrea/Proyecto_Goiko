@@ -57,4 +57,19 @@ flechaIdiomas.addEventListener("click",()=>{
 })
 
 
+//SUBIR AL TOP
+let puntoSubir=document.querySelector(".punto svg");
+let divOculto=document.querySelector(".oculto");
+let topOculto=document.querySelector(".top p");
+
+puntoSubir.addEventListener("mouseenter",()=>{
+    divOculto.style.visibility="visible";
+    topOculto.style.visibility="visible";
+})
+
+puntoSubir.addEventListener("mouseleave",()=>{
+    topOculto.style.visibility="hidden";
+    divOculto.style.visibility="hidden";
+})
+
 })

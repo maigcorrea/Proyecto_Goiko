@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .main__logo>svg {
@@ -988,21 +989,6 @@ footer{
     width: 30px;
 }
 
-/* EL CIRCULITO QUE RODEA LAS REDES SOCIALES NO SE PONE */
-/* .social-media svg::after{
-    border-style: solid;
-    border-width: .09375rem;
-    border-radius: 50%;
-    border-color: black;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-} */
-
 /* PALABRAS CHORREOFOREVER EN MOVIMIENTO */
 
 .chorreo-container{
@@ -1066,8 +1052,8 @@ footer>div:last-child a{
 }
 
 .hoverTop{
-    display: flex;
-    justify-content: start;
+    display: flex !important;
+    justify-content: end !important;
 }
 
 .oculto, .top{
@@ -1078,8 +1064,14 @@ footer>div:last-child a{
     width: 3%;
 }
 
-.punto img{
+.punto svg{
     max-width: 100%;
+}
+
+.punto svg:hover{
+    fill: white;
+    stroke: black;
+    stroke-width: 23px;
 }
 
 
