@@ -439,9 +439,8 @@ nav{
     padding:60px 0;
     display: flex;
     gap: 30px;
-    /* justify-content: space-around; */
     margin-left:50px;
-    width:300%; /*  con display flex solo no funciona, no se porqué, SÓLO FUNCIONA ASÍ */
+    width:300%; /* 310% para que solo se vean 3*/
 }
 
 .elemento-menu{
@@ -465,11 +464,43 @@ nav{
     color:#8d8d8d;
 }
 
+.fondo{
+    width: 100%;
+    height: 80%;
+}
+
 .elemento-menu img{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border:1px solid white;
     border-radius: 15px;
 }
+
+/* .news-container{
+    margin-top:5%;
+    margin-bottom: 5%;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.new{
+    width: 33%;
+}
+
+.img-container{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
 /* SECCION 4 */
 #contador{
