@@ -711,7 +711,7 @@ video{
     view-timeline-axis: block;
     animation-timeline: --efecto;
     animation-name:animarBurguer;
-    animation-range:entry 0% cover 200%;
+    animation-range:entry 0% cover 70%;
     animation-fill-mode: both;
 }
 
@@ -724,7 +724,7 @@ video{
     view-timeline-axis: block;
     animation-timeline: --efecto;
     animation-name:animarSalsa;
-    animation-range:entry 0% cover 200%;
+    animation-range:entry 0% cover 50%;
     animation-fill-mode: both;
 }
 
@@ -737,7 +737,7 @@ video{
     view-timeline-axis: block;
     animation-timeline: --efecto;
     animation-name:animarPan;
-    animation-range:entry 0% cover 200%;
+    animation-range:entry 0% cover 50%;
     animation-fill-mode: both;
     overflow: hidden;
 }
@@ -1100,6 +1100,12 @@ footer>div:last-child a{
         max-width: 90vh;
         margin-top: 7%;
     }
+
+    /* SECCIÓN 3 - KEVIN BACON VENDIDAS ESTE AÑO */
+    #contador img{
+        width: 80px;
+    }
+
     /* GOIKOCINA */
     .goikocinaTexto a {
         width: 75%;
